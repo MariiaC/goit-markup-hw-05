@@ -65,7 +65,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="main-button">Заказать услугу</button>
+          <button   data-modal-open type=" button" class="main-button">Заказать услугу</button>
         </div>
       </section>
       <!--Преимущества секция2-->
@@ -136,7 +136,8 @@
                 alt="руки на клавиатуре, набирающие код"
                 width="370"
               />
-            </li>
+              <p class="responsibilities-text">Десктопные приложения</p>
+              </li>
             <li class="responsibilities-item">
               <img
                 class="responsibilities-image"
@@ -144,6 +145,7 @@
                 alt="выбор дизайна разметки страницы на мониторе компьютера"
                 width="370"
               />
+              <p class="responsibilities-text">Мобильные приложения</p>
             </li>
             <li class="responsibilities-item">
               <img
@@ -152,6 +154,7 @@
                 alt="выбор цветов на екране планшета"
                 width="370"
               />
+              <p class="responsibilities-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -488,5 +491,13 @@
       </div>
       </div>
     </footer>
+<!--Modal window-->
+
+<div data-modal class="backdrop is-hidden"  >
+  <div class="modal">
+<button data-modal-close type="button">close</button>
+  </div>
+</div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
