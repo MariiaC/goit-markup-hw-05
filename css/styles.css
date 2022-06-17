@@ -136,8 +136,15 @@ body {
 }
 
 
-/*добавляем переход и подчеркивание
-.site-nav-link::after{
+/*Подчеркивание*/
+
+
+.current-page {
+    display: block;
+    position: relative;
+}
+
+.current-link::after {
     content: '';
     display: block;
     position: absolute;
@@ -146,15 +153,8 @@ body {
     background-color: var(--accent-color);
     border-radius: 2px;
     left: 0;
-    bottom: -30px;
-    opacity: 0;
-    transition: opacity 250ms var(--timng-function);
-  }
-
-.site-nav-link:hover::after,
-.site-nav-link:focus::after{
-    opacity: 1;
-}*/
+    bottom: -31px;
+}
 
 /* список контактов header*/
 .contact-nav {
@@ -199,6 +199,7 @@ body {
     margin-right: 10px;
     fill: currentColor;
 }
+
 
 /*первая секция Hero*/
 
